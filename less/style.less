@@ -645,9 +645,8 @@ body{
 
 }
 .custom-box{
-    height: 1.1rem;
+//  height: 1.1rem;
     background: #fff;
-    padding-right: 4.6rem;
     padding-left: .3rem;
     font-size: .28rem;
     img{
@@ -666,8 +665,13 @@ body{
 .custom-box > input[type=radio]:checked ~ .custom-icon{
     background-image: url(../images/radio1.png);
 }
-
+.custom-box > input[type=checkbox]:checked ~ .custom-icon{
+    background-image: url(../images/radio1.png);
+}
 .custom-box > input[type=radio]{
+    display: none;
+}
+.custom-box > input[type=checkbox]{
     display: none;
 }
 .pay-btn{

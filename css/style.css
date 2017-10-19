@@ -16,7 +16,7 @@ body {
   height: 1.36rem;
 }
 .head-index div {
-  font-size: .20rem;
+  font-size: .26rem;
 }
 .head-index div label {
   margin: 0;
@@ -72,10 +72,20 @@ body {
 }
 .title {
   margin: .3rem .22rem;
-  border-left: .08rem solid #e67816;
-  text-indent: .1rem;
   font-size: .26rem;
   line-height: .3rem;
+}
+.title span {
+  display: flex;
+  align-items: center;
+}
+.title span label {
+  display: inline-block;
+  height: .24rem;
+  width: .08rem;
+  border-radius: .02rem;
+  background: #e67816;
+  margin-right: .1rem;
 }
 .title a {
   color: #999;
@@ -131,6 +141,7 @@ body {
   margin: 0 0 .16rem 0;
   height: .26rem;
   overflow: hidden;
+  font-weight: 300;
 }
 .index-board li span {
   display: inline-block;
@@ -142,7 +153,7 @@ body {
   margin: 0;
 }
 .index-board li .index-price {
-  font-size: .24rem;
+  font-size: .3rem;
   color: #e67816;
 }
 .index-board li button {
@@ -153,6 +164,7 @@ body {
   text-align: center;
   line-height: .36rem;
   border: none;
+  border-radius: .02rem;
   font-size: .2rem;
   color: #fff;
 }
@@ -195,20 +207,22 @@ body {
 }
 .nav-bottom .shoppong-icon span {
   position: absolute;
-  top: 0;
-  right: .36rem;
+  top: -0.06rem;
+  right: .42rem;
   width: .3rem;
   height: .3rem;
-  font-size: .16rem;
+  font-size: .2rem;
   text-align: center;
   line-height: .3rem;
   background: #e67816;
   color: #fff;
   border-radius: 50%;
+  border: .01rem solid #fff;
 }
 .nav-bottom p {
   margin: 0;
   font-size: .2rem;
+  margin-top: -0.04rem;
 }
 .nav-bottom img {
   display: block;
@@ -262,7 +276,7 @@ body {
   text-align: center;
   line-height: .55rem;
   border: .01rem solid #d5dae7;
-  border-radius: .1rem;
+  border-radius: .02rem;
   margin-right: .2rem;
 }
 .warehouse .active {
@@ -330,7 +344,7 @@ body {
   color: #e88335;
 }
 .list-box {
-  padding-bottom: .3rem;
+  padding-bottom: .26rem;
   overflow: hidden;
 }
 .list-box span {
@@ -558,7 +572,7 @@ body {
 }
 .shopping-total button {
   color: #fff;
-  background: #f58726;
+  background: -webkit-linear-gradient(left, #ff9231, #e67816);
   border: none;
   border-radius: 0;
   width: 2.24rem;
@@ -609,29 +623,35 @@ body {
   color: #e67816;
   margin: 0;
 }
-.pay-radio {
-  background: #fff;
+.custom-box {
   height: 1.1rem;
-  line-height: 1.1rem;
+  background: #fff;
+  padding-right: 4.6rem;
+  padding-left: .3rem;
+  font-size: .28rem;
 }
-.pay-radio img {
+.custom-box img {
   width: .4rem;
   height: .36rem;
-  vertical-align: middle;
-  margin-right: .3rem;
 }
-.pay-radio label {
-  vertical-align: middle;
-  font-size: .26rem;
+.custom-icon {
+  display: block;
+  width: .38rem;
+  height: .38rem;
+  background-image: url(../images/radio2.png);
+  background-size: .38rem;
 }
-.pay-radio input {
-  top: .24rem !important;
+.custom-box > input[type=radio]:checked ~ .custom-icon {
+  background-image: url(../images/radio1.png);
+}
+.custom-box > input[type=radio] {
+  display: none;
 }
 .pay-btn {
   width: 6.9rem;
   height: .96rem;
   color: #fff;
-  background: #fc8e2e;
+  background: -webkit-linear-gradient(left, #ff9231, #e67816);
   border: none;
   position: fixed;
   bottom: .3rem;
@@ -745,7 +765,7 @@ body {
   border-radius: 50%;
   background: #f38525;
   color: #fff;
-  font-size: .16rem;
+  font-size: .2rem;
   text-align: center;
   line-height: .36rem;
 }
@@ -1012,6 +1032,10 @@ body {
 }
 .order .top-info {
   height: 1.3rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #fffced;
   padding: .3rem;
 }
@@ -1026,10 +1050,19 @@ body {
   line-height: .6rem;
   padding-left: .3rem;
   color: #000;
+  display: flex;
+  align-items: center;
 }
 .order .order-title span {
-  padding-left: .1rem;
-  border-left: .08rem solid #e67816;
+  display: inline;
+  line-height: .1rem;
+}
+.order .order-title label {
+  display: block;
+  width: .08rem;
+  height: .24rem;
+  background: #e67816;
+  margin-right: .1rem;
 }
 .order .order-classify span {
   color: #4d4d4d;
@@ -1114,7 +1147,7 @@ body {
 .order .order-sub button {
   width: 6.9rem;
   height: .96rem;
-  background: #fe9130;
+  background: -webkit-linear-gradient(left, #ff9231, #e67816);
   color: #fff;
   border: none;
 }

@@ -14,11 +14,16 @@ $('.warehouse li').click(function(){
 	$(this).addClass('active').siblings().removeClass('active');
 })
 //头部输入框
-$('.head-index input').keyup(function(){
+$('.head-index input').keyup(function(e){
 	if($(this).val()!=''){
 		$(this).css('background-image','none');
 	}else{
 		$(this).css({'background-image':'url(images/inputSearch.png)','background-size': '2.34rem .66rem','background-repeat': 'no-repeat'});
+	}
+	if(e.keyCode==13){
+		//搜索
+		
+		
 	}
 })
 //首页轮播

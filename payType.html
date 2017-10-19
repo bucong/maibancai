@@ -21,15 +21,20 @@
 			<p>2、微信支付达到上限，不支持线上支付。</p>
 		</div>
 		<div class="spacing"></div>
-		<div class="mui-input-row mui-radio mui-left pay-radio">
-			<label><img src="images/payType_03.jpg"/>微信</label>
-			<input name="radio1" type="radio">
-		</div>
-		<div class="spacing"></div>
-		<div class="mui-input-row mui-radio mui-left pay-radio">
-			<label><img src="images/payType_06.jpg"/>线下支付</label>
-			<input name="radio1" type="radio">
-		</div>
+		<label class="custom-box flex">
+            <input name="pay" type="radio" value="a"/>
+            <span class="custom-icon"></span>
+            <img src="images/payType_03.jpg"/>
+            <span style="display: block;width: 1.2rem;">微信</span>
+        </label>
+        <div class="spacing"></div>
+        <label class="custom-box flex">
+            <input name="pay" type="radio" value="b"/>
+            <span class="custom-icon"></span>
+            <img src="images/payType_06.jpg"/>
+            <span style="display: block;width: 1.2rem;">线下支付</span>
+        </label>
+		
 		<button class="pay-btn">确定</button>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

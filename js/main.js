@@ -52,6 +52,14 @@ $('.scroll-box').on("swiperight",function(){
     }
     $('.scroll-box .scroll-long').animate({'left':-(6.6*i+6)+'rem'},500);
 });
+setInterval(function(){
+	i++;
+	if(i>long-1){
+    	i=0;
+    	$('.scroll-box .scroll-long').css('left','0rem');
+    }
+    $('.scroll-box .scroll-long').animate({'left':-(6.6*i+6)+'rem'},500);
+},6000)
 //精品推荐宽度
 $('.index-commend ul').css('width',$('.index-commend ul li').length*4.4+'rem');
 

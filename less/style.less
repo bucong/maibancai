@@ -144,6 +144,9 @@ body{
             height: .26rem;
             overflow: hidden;
             font-weight: 300;
+            a{
+                color: #000;
+            }
         }
         span{
             display: inline-block;
@@ -408,7 +411,7 @@ body{
         font-weight: 900;
     }
 }
-.minus,.plus{
+.minus,.plus,.minus1,.plus1{
     width: .65rem;
     height: .6rem;
     background: #f5f5f5;
@@ -416,15 +419,15 @@ body{
     font-size: .4rem;
     padding: 0;
 }
-.minus{
+.minus,.minus1{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.plus{
+.plus,.plus1{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.num{
+.num,.num1{
     width: .76rem !important;
     height: .6rem !important;
     text-align: center;
@@ -509,6 +512,7 @@ body{
         }
         input{
             left: .3rem !important;
+            transform: scale(.8,.8);
         }
         label{
             font-size: .3rem;
@@ -572,6 +576,7 @@ body{
         }
         input{
             left: .3rem !important;
+            transform: scale(.8,.8);
         }
         label{
             font-size: .24rem;
@@ -645,7 +650,6 @@ body{
 
 }
 .custom-box{
-//  height: 1.1rem;
     background: #fff;
     padding-left: .3rem;
     font-size: .28rem;

@@ -143,6 +143,9 @@ body {
   overflow: hidden;
   font-weight: 300;
 }
+.index-board li h3 a {
+  color: #000;
+}
 .index-board li span {
   display: inline-block;
   font-size: .2rem;
@@ -396,7 +399,9 @@ body {
   font-weight: 900;
 }
 .minus,
-.plus {
+.plus,
+.minus1,
+.plus1 {
   width: .65rem;
   height: .6rem;
   background: #f5f5f5;
@@ -404,15 +409,18 @@ body {
   font-size: .4rem;
   padding: 0;
 }
-.minus {
+.minus,
+.minus1 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.plus {
+.plus,
+.plus1 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.num {
+.num,
+.num1 {
   width: .76rem !important;
   height: .6rem !important;
   text-align: center;
@@ -498,6 +506,7 @@ body {
 }
 .shopping-list .mui-checkbox input {
   left: .3rem !important;
+  transform: scale(0.8, 0.8);
 }
 .shopping-list .mui-checkbox label {
   font-size: .3rem;
@@ -560,6 +569,7 @@ body {
 }
 .shopping-total .mui-checkbox input {
   left: .3rem !important;
+  transform: scale(0.8, 0.8);
 }
 .shopping-total .mui-checkbox label {
   font-size: .24rem;
